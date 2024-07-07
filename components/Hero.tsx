@@ -7,12 +7,12 @@ const Hero = () => {
     <div className=" w-[90%] mx-auto py-5 border-b-4 border-gray-50">
       <div className="lg:grid grid-cols-2 gap-10 items-center ">
         <div className=" text-center lg:text-left">
-          <h1 className="text-2xl lg:text-4xl xl:text-[64px] font-semibold leading-normal tracking-wider">
+          <h1 className="text-2xl lg:text-4xl xl:text-[64px] !leading-[1.1] font-semibold tracking-wider">
             Get anywhere you want to get with{" "}
             <span className=" text-everest-blue-600">convenience</span>{" "}
           </h1>
 
-          <div className="xl:w-[90%]">
+          <div className="lg:w-[90%]">
             <p className="my-8 text-sm xl:text-base">
               Get a driver to wherever, and send packages to anywhere on the
               Everest App. Get a lift and get paid while at it.
@@ -80,7 +80,7 @@ const Hero = () => {
             </div>
 
             <div className="grid grid-cols-3 gap-3 xl:gap-8 mt-8">
-              <div className="border border-everest-blue-600 rounded-xl lg:rounded-3xl text-center p-2 lg:p-3 xl:p-5">
+              <div className="border border-everest-blue-600 rounded-xl lg:rounded-3xl text-center p-2 md:p-3 xl:p-5">
                 <svg
                   width="33"
                   height="32"
@@ -120,7 +120,7 @@ const Hero = () => {
                 </p>
               </div>
 
-              <div className="border border-everest-blue-600 rounded-xl lg:rounded-3xl text-center p-2 lg:p-3 xl:p-5">
+              <div className="border border-everest-blue-600 rounded-xl lg:rounded-3xl text-center p-2 md:p-3 xl:p-5">
                 <svg
                   width="33"
                   height="32"
@@ -152,7 +152,7 @@ const Hero = () => {
                 </p>
               </div>
 
-              <div className="border border-everest-blue-600 rounded-xl lg:rounded-3xl text-center p-2 lg:p-3 xl:p-5">
+              <div className="border border-everest-blue-600 rounded-xl lg:rounded-3xl text-center p-2 md:p-3 xl:p-5">
                 <svg
                   width="33"
                   height="32"
