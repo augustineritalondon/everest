@@ -41,6 +41,120 @@ export default function Home() {
           </div>
         </div>
 
+        {/* 4th */}
+        <div className="mb-20 lg:mb-24 xl:mb-32">
+          <div className="text-center mb-10 lg:mb-16">
+            <h1 className="text-2xl lg:text-4xl xl:text-5xl font-semibold">
+              Quick and Convenient Rides
+            </h1>
+            <p className="text-sm lg:text-xl xl:text-2xl my-3 lg:my-5">
+              {" "}
+              Experience the ease of bookin a ride with just a tap on the
+              Everest app
+            </p>
+          </div>
+
+          <div className="bg-[#f4f4f4] rounded-xl lg:rounded-3xl relative grid lg:grid-cols-2 overflow-hidden pt-3 lg:pt-10">
+            <Image
+              src="/images/backdrop.png"
+              alt="Vercel Logo"
+              className="absolute top-0 -left-5"
+              width={270}
+              height={320}
+            />
+
+            <div className="p-5 lg:px-12">
+              <h1 className="text-xl lg:text-3xl font-bold">
+                Easy Wallet Payment
+              </h1>
+              <p className="text-sm lg:text-lg mt-5">
+                Enjoy the convenience of seamless transactions with
+                Everest&apos;s Easy Wallet Payment feature.
+              </p>
+            </div>
+            <div>
+              <Image
+                src="/images/wallet.png"
+                alt="Vercel Logo"
+                className="mx-auto"
+                width={528}
+                height={320}
+              />
+            </div>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-10 mt-10">
+            <div className="bg-[#f4f4f4] rounded-xl lg:rounded-3xl relative overflow-hidden pt-3 lg:pt-10">
+              <Image
+                src="/images/backdrop.png"
+                alt="Vercel Logo"
+                className="absolute top-0 -left-5"
+                width={270}
+                height={320}
+              />
+
+              <div className="p-5 lg:px-12">
+                <h1 className="text-xl lg:text-3xl font-bold">Rides History</h1>
+                <p className="text-sm lg:text-lg mt-5">
+                  Easily access detailed records of all your past rides directly
+                  within the app.
+                </p>
+              </div>
+              <div className="lg:mt-8">
+                <Image
+                  src="/images/history.png"
+                  alt="Vercel Logo"
+                  className="mx-auto"
+                  width={528}
+                  height={320}
+                />
+              </div>
+            </div>
+            <div className="bg-[#f4f4f4] rounded-xl lg:rounded-3xl relative overflow-hidden pt-3 lg:pt-10">
+              <Image
+                src="/images/backdrop.png"
+                alt="Vercel Logo"
+                className="absolute top-0 -left-5"
+                width={270}
+                height={320}
+              />
+
+              <div className="p-5 lg:px-12">
+                <h1 className="text-xl lg:text-3xl font-bold">
+                  Quick and Convenient Rides
+                </h1>
+                <p className="text-sm lg:text-lg mt-5">
+                  Experience the ease of booking a ride with just a tap on the
+                  Everest app.{" "}
+                </p>
+              </div>
+
+              <div className="lg:mt-8">
+                <Image
+                  src="/images/rides.png"
+                  alt="Vercel Logo"
+                  className="mx-auto"
+                  width={528}
+                  height={320}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* map */}
+      <section className="mb-20 lg:mb-32">
+        <Image
+          src="/images/map.png"
+          alt="Vercel Logo"
+          className="w-full"
+          width={1440}
+          height={800}
+        />
+      </section>
+
+      <section className="w-[90%] mx-auto">
         {/* 3rd */}
         <div className="mb-20 lg:mb-24 xl:mb-32">
           <div className="text-center">
@@ -67,7 +181,7 @@ export default function Home() {
               <Image
                 src="/images/star.png"
                 alt="Vercel Logo"
-                className="absolute top-0 -left-5 lg:top-6 lg:-left-5"
+                className="absolute top-0 -left-5 lg:top-6 lg:-left-5 star"
                 width={77}
                 height={76}
               />
@@ -180,107 +294,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/* 4th */}
-        <div className="mb-20 lg:mb-24 xl:mb-32">
-          <div className="bg-[#f4f4f4] rounded-xl lg:rounded-3xl relative grid lg:grid-cols-2 overflow-hidden pt-3 lg:pt-10">
-            <Image
-              src="/images/backdrop.png"
-              alt="Vercel Logo"
-              className="absolute top-0 -left-5"
-              width={270}
-              height={320}
-            />
-
-            <div className="p-5 lg:px-12">
-              <h1 className="text-xl lg:text-3xl font-bold">
-                Easy Wallet Payment
-              </h1>
-              <p className="text-sm lg:text-lg mt-5">
-                Enjoy the convenience of seamless transactions with
-                Everest&apos;s Easy Wallet Payment feature.
-              </p>
-            </div>
-            <div>
-              <Image
-                src="/images/wallet.png"
-                alt="Vercel Logo"
-                className="mx-auto"
-                width={528}
-                height={320}
-              />
-            </div>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-10 mt-10">
-            <div className="bg-[#f4f4f4] rounded-xl lg:rounded-3xl relative overflow-hidden pt-3 lg:pt-10">
-              <Image
-                src="/images/backdrop.png"
-                alt="Vercel Logo"
-                className="absolute top-0 -left-5"
-                width={270}
-                height={320}
-              />
-
-              <div className="p-5 lg:px-12">
-                <h1 className="text-xl lg:text-3xl font-bold">Rides History</h1>
-                <p className="text-sm lg:text-lg mt-5">
-                  Easily access detailed records of all your past rides directly
-                  within the app.
-                </p>
-              </div>
-              <div className="lg:mt-8">
-                <Image
-                  src="/images/history.png"
-                  alt="Vercel Logo"
-                  className="mx-auto"
-                  width={528}
-                  height={320}
-                />
-              </div>
-            </div>
-            <div className="bg-[#f4f4f4] rounded-xl lg:rounded-3xl relative overflow-hidden pt-3 lg:pt-10">
-              <Image
-                src="/images/backdrop.png"
-                alt="Vercel Logo"
-                className="absolute top-0 -left-5"
-                width={270}
-                height={320}
-              />
-
-              <div className="p-5 lg:px-12">
-                <h1 className="text-xl lg:text-3xl font-bold">
-                  Quick and Convenient Rides
-                </h1>
-                <p className="text-sm lg:text-lg mt-5">
-                  Experience the ease of booking a ride with just a tap on the
-                  Everest app.{" "}
-                </p>
-              </div>
-
-              <div className="lg:mt-8">
-                <Image
-                  src="/images/rides.png"
-                  alt="Vercel Logo"
-                  className="mx-auto"
-                  width={528}
-                  height={320}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* map */}
-      <section className="mb-20 lg:mb-32">
-        <Image
-          src="/images/map.png"
-          alt="Vercel Logo"
-          className="w-full"
-          width={1440}
-          height={800}
-        />
       </section>
 
       <section className=" bg-everest-blue-600 p-8 lg:p-16">

@@ -78,3 +78,108 @@
 .light-bg {
   background-color: rgba(11, 132, 250, 0.28);
 }
+
+/* hero image face location css */
+@keyframes zoom-in-out {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.pinpoint {
+  width: 64px; /* Adjust size as needed */
+  height: 64px; /* Adjust size as needed */
+  animation: zoom-in-out 2s infinite;
+}
+
+/*  css for the blue lines */
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+}
+
+@keyframes reverse-wave {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+.line1,
+.line4 {
+  animation: wave 3s infinite ease-in-out;
+}
+
+.line2,
+.line5 {
+  animation: wave 3s infinite ease-in-out 0.6s;
+}
+
+.line3,
+.line6 {
+  animation: wave 3s infinite ease-in-out 1.2s;
+}
+
+.line4 {
+  animation: reverse-wave 3s infinite ease-in-out;
+}
+
+.line5 {
+  animation: reverse-wave 3s infinite ease-in-out 0.6s;
+}
+
+.line6 {
+  animation: reverse-wave 3s infinite ease-in-out 1.2s;
+}
+
+/* css for arrow */
+#arrowPath {
+  stroke-dasharray: 1000; /* A large number that’s bigger than the length of the path */
+  stroke-dashoffset: 1000; /* Start with the path hidden */
+  animation: draw 2s forwards; /* Adjust the duration to your liking */
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0; /* End with the path fully visible */
+  }
+}
+
+/* card 1 */
+.card {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+/* Apply the `animate` class to start the animation */
+.card.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.star {
+  display: block;
+  animation: rotate 10s linear infinite; /* Adjust the duration for the speed of rotation */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
