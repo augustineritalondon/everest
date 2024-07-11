@@ -77,7 +77,7 @@ const Navbar = () => {
                     />
                   </svg>
                 </MenubarTrigger>
-                <MenubarContent>
+                {/* <MenubarContent>
                   <MenubarItem>
                     New Tab <MenubarShortcut>⌘T</MenubarShortcut>
                   </MenubarItem>
@@ -86,7 +86,7 @@ const Navbar = () => {
                   <MenubarItem>Share</MenubarItem>
                   <MenubarSeparator />
                   <MenubarItem>Print</MenubarItem>
-                </MenubarContent>
+                </MenubarContent> */}
               </MenubarMenu>
             </Menubar>
             <p className="md:mx-5 my-10 md:my-0 cursor-pointer">FAQs</p>
@@ -127,7 +127,7 @@ const Navbar = () => {
                     />
                   </svg>
                 </MenubarTrigger>
-                <MenubarContent>
+                {/* <MenubarContent>
                   <MenubarItem>
                     New Tab <MenubarShortcut>⌘T</MenubarShortcut>
                   </MenubarItem>
@@ -136,7 +136,7 @@ const Navbar = () => {
                   <MenubarItem>Share</MenubarItem>
                   <MenubarSeparator />
                   <MenubarItem>Print</MenubarItem>
-                </MenubarContent>
+                </MenubarContent> */}
               </MenubarMenu>
             </Menubar>
             <p className="md:mx-5 my-10 md:my-0 cursor-pointer">FAQs</p>
