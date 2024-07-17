@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <div className=" bg-everest-gray-950 text-white p-8 lg:p-24 xl:p-32">
@@ -64,9 +66,12 @@ const Footer = () => {
               <li className=" text-sm lg:text-base mt-3 lg:mt-0 cursor-pointer">
                 Terms & Conditions{" "}
               </li>
-              <li className="lg:ml-10 text-sm lg:text-base mt-3 lg:mt-0 cursor-pointer">
+              <Link
+                href="/privacy-policy"
+                className="lg:ml-10 text-sm lg:text-base mt-3 lg:mt-0 cursor-pointer"
+              >
                 Privacy Policy
-              </li>
+              </Link>
             </ul>
           </div>
         </div>

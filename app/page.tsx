@@ -1,8 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Button from "@/components/Button";
 import Footer from "@/components/Footer";
+import CountUp from "react-countup";
 
 export default function Home() {
   return (
@@ -17,7 +20,7 @@ export default function Home() {
         <div className="md:flex justify-between my-20 lg:my-24 xl:my-32 bg-everest-gray-950 text-white rounded-3xl p-8 xl:p-12 text-center lg:text-left">
           <div className="lg:mt-0 lg:flex items-center">
             <h1 className="text-xl lg:text-3xl xl:text-5xl font-semibold">
-              70k
+              <CountUp start={1} end={70} duration={20} />k
             </h1>
             <p className=" text-xs xl:text-sm ml-2">
               24/7 Customer support and <br /> interaction
@@ -25,7 +28,7 @@ export default function Home() {
           </div>
           <div className="mt-5 md:mt-0 lg:flex items-center">
             <h1 className="text-xl lg:text-3xl xl:text-5xl font-semibold">
-              10x
+              <CountUp start={1} end={10} duration={30} />x
             </h1>
             <p className=" text-xs xl:text-sm ml-2">
               24/7 Customer support and <br /> interaction
@@ -33,7 +36,8 @@ export default function Home() {
           </div>
           <div className="mt-5 md:mt-0 lg:flex items-center">
             <h1 className="text-xl lg:text-3xl xl:text-5xl font-semibold">
-              80M+
+              <CountUp start={1} end={80} duration={20} />
+              M+
             </h1>
             <p className=" text-xs xl:text-sm ml-2">
               24/7 Customer support and <br /> interaction
@@ -77,6 +81,7 @@ export default function Home() {
                 src="/images/wallet.png"
                 alt="Vercel Logo"
                 className="mx-auto"
+                data-aos="fade-up"
                 width={528}
                 height={320}
               />
@@ -105,6 +110,7 @@ export default function Home() {
                   src="/images/history.png"
                   alt="Vercel Logo"
                   className="mx-auto"
+                  data-aos="fade-up"
                   width={528}
                   height={320}
                 />
@@ -134,6 +140,7 @@ export default function Home() {
                   src="/images/rides.png"
                   alt="Vercel Logo"
                   className="mx-auto"
+                  data-aos="fade-up"
                   width={528}
                   height={320}
                 />
@@ -174,7 +181,7 @@ export default function Home() {
               <Image
                 src="/images/groupImage.png"
                 alt="Vercel Logo"
-                className="w-full lg:w-[535px]"
+                className="w-full lg:w-[535px] "
                 width={535}
                 height={587}
               />

@@ -13,6 +13,7 @@ import {
 import Image from "next/image";
 import Button from "./Button";
 import { CloseCircle, HambergerMenu, Menu } from "iconsax-react";
+import Link from "next/link";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -53,7 +54,9 @@ const Navbar = () => {
       >
         <div className="md:flex">
           <div className="md:flex items-center">
-            <p className="md:mx-5 my-10 md:my-0 cursor-pointer">Home</p>
+            <Link href="/" className="md:mx-5 my-10 md:my-0 cursor-pointer">
+              Home
+            </Link>
             <Menubar className="border-none md:mx-5 my-10 md:my-0 cursor-pointer">
               <MenubarMenu>
                 <MenubarTrigger className="p-0 flex items-center">
@@ -103,7 +106,9 @@ const Navbar = () => {
       <div className="hidden h-[80vh] md:h-full md:grid items-center text-center ">
         <div className="md:flex">
           <div className="md:flex items-center">
-            <p className="md:mx-5 my-10 md:my-0 cursor-pointer">Home</p>
+            <Link href="/" className="md:mx-5 my-10 md:my-0 cursor-pointer">
+              Home
+            </Link>
             <Menubar className="border-none md:mx-5 my-10 md:my-0 cursor-pointer">
               <MenubarMenu>
                 <MenubarTrigger className="p-0 flex items-center">
