@@ -152,9 +152,13 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="hidden md:block">
+      <Link
+        href="https://play.google.com/store/apps/details?id=kn.everest.passenger"
+        target="_blank"
+        className="hidden md:block"
+      >
         <Button mode="blue">Download the app</Button>
-      </div>
+      </Link>
     </div>
   );
 };

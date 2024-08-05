@@ -21,7 +21,7 @@ const Hero = () => {
 
             <div className="grid grid-cols-2 gap-3 lg:gap-8">
               <Link
-                href="https://play.google.com/store/apps/details?id=kn.everest.passenger"
+                href="https://apps.apple.com/ng/app/everest-ride-delivery-earn/id6456938354"
                 target="_blank"
               >
                 <Button mode="dark">
@@ -53,7 +53,7 @@ const Hero = () => {
               </Link>
 
               <Link
-                href="https://apps.apple.com/ng/app/everest-ride-delivery-earn/id6456938354"
+                href="https://play.google.com/store/apps/details?id=kn.everest.passenger"
                 target="_blank"
               >
                 <Button mode="dark">

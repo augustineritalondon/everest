@@ -6,9 +6,12 @@ const PrivacyPolicy = () => {
     <>
       <Navbar />
 
-      <div className="container mx-auto py-10 px-4">
-        <h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>
-        <p className="mb-4">Last Updated: 04/06/2024.</p>
+      <div className=" bg-everest-blue-600 text-white text-center py-10">
+        <h1 className="text-3xl lg:text-5xl font-bold ">Privacy Policy</h1>
+        <p className="mt-2">Last Updated: 04/06/2024.</p>
+      </div>
+
+      <div className="container mx-auto py-10 px-4 text-justify">
         <p className="mb-4">
           This Privacy Policy (“Policy”) explains the information collection,
           use, and sharing practices of Everest Mobility Ltd (“we,” “us,” and
