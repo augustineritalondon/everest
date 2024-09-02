@@ -5,8 +5,8 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className=" bg-everest-gray-950 text-white p-8 lg:p-24 xl:p-32">
-      <div className="">
+    <div className=" bg-everest-gray-950 text-white p-8 lg:p-24 xl:p-32 ">
+      <div className="3xl:w-[70%] mx-auto">
         <div className="lg:flex justify-between">
           <div className="lg:w-[30%]">
             <Image

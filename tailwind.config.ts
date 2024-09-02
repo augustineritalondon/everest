@@ -104,6 +104,9 @@ const config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "hero-bg": "url('/images/line.png')",
       },
+      screens: {
+        "3xl": "1528px", // Custom screen size for tablets
+      },
     },
   },
   plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],

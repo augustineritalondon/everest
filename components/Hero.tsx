@@ -6,7 +6,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div className=" w-[90%] mx-auto py-5 border-b-4 border-gray-50">
-      <div className="lg:grid grid-cols-2 gap-10 items-center ">
+      <div className="lg:grid grid-cols-2 gap-10 items-center 3xl:w-[70%] mx-auto">
         <div className=" text-center lg:text-left">
           <h1 className="text-2xl lg:text-4xl xl:text-[64px] !leading-[1.1] font-semibold tracking-wider">
             Get anywhere you want to get with{" "}

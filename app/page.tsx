@@ -16,32 +16,28 @@ export default function Home() {
         <Hero />
       </div>
 
-      <section className="w-[90%] mx-auto">
+      <section className="w-[90%] mx-auto 3xl:w-[70%]">
         {/* 2nd */}
         <div className="md:flex justify-between my-20 lg:my-24 xl:my-32 bg-everest-gray-950 text-white rounded-3xl p-8 xl:p-12 text-center lg:text-left">
           <div className="lg:mt-0 lg:flex items-center">
             <h1 className="text-xl lg:text-3xl xl:text-5xl font-semibold">
-              <CountUp start={1} end={70} duration={20} />k
+              <CountUp start={1} end={10} duration={20} />K
             </h1>
-            <p className=" text-xs xl:text-sm ml-2">
-              24/7 Customer support and <br /> interaction
-            </p>
+            <p className=" text-xs xl:text-sm ml-2">Satisfied Customers.</p>
           </div>
           <div className="mt-5 md:mt-0 lg:flex items-center">
             <h1 className="text-xl lg:text-3xl xl:text-5xl font-semibold">
-              <CountUp start={1} end={10} duration={30} />x
+              <CountUp start={1} end={85} duration={30} />K
             </h1>
-            <p className=" text-xs xl:text-sm ml-2">
-              24/7 Customer support and <br /> interaction
-            </p>
+            <p className=" text-xs xl:text-sm ml-2">Successful Trips</p>
           </div>
           <div className="mt-5 md:mt-0 lg:flex items-center">
             <h1 className="text-xl lg:text-3xl xl:text-5xl font-semibold">
-              <CountUp start={1} end={80} duration={20} />
-              M+
+              <CountUp start={1} end={24} duration={20} />
+              /<CountUp start={1} end={7} duration={30} />
             </h1>
             <p className=" text-xs xl:text-sm ml-2">
-              24/7 Customer support and <br /> interaction
+              Customer support and <br /> interaction
             </p>
           </div>
         </div>
@@ -162,7 +158,7 @@ export default function Home() {
         />
       </section>
 
-      <section className="w-[90%] mx-auto">
+      <section className="w-[90%] mx-auto 3xl:w-[70%]">
         {/* 3rd */}
         <div className="mb-20 lg:mb-24 xl:mb-32">
           <div className="text-center">
@@ -305,104 +301,106 @@ export default function Home() {
       </section>
 
       <section className=" bg-everest-blue-600 p-8 lg:p-16">
-        <div className="bg-[#f4f4f4] grid lg:grid-cols-2 items-center rounded-xl lg:rounded-3xl pt-5">
-          <div className="px-5 lg:px-16">
-            <span className="light-bg text-everest-blue-600 p-2 px-4 rounded-full text-xs lg:text-sm xl:text-base">
-              Elevate Your Journey
-            </span>
-            <h1 className="my-4 text-[18px] lg:text-[20px] xl:text-[32px] font-semibold">
-              Reach New Heights with Everest
-            </h1>
-            <p className="text-xs lg:text-sm xl:text-base">
-              Discover the ultimate travel experience with Everest. Whether you
-              need quick and convenient rides, luxurious car rentals, or
-              seamless trip planning, our user-friendly app has you covered.{" "}
-            </p>
-            <div className="grid lg:grid-cols-2 gap-3 lg:gap-8 mt-5 mb-5 lg:mb-0 lg:mt-8">
-              <Link
-                href="https://apps.apple.com/ng/app/everest-ride-delivery-earn/id6456938354"
-                target="_blank"
-              >
-                <Button mode="dark">
-                  <div className="flex items-center justify-center">
-                    <svg
-                      width="19"
-                      height="23"
-                      viewBox="0 0 19 23"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M15.6542 12.2793C15.6283 9.42505 18.0155 8.03645 18.1246 7.9718C16.7727 6.02086 14.6772 5.7543 13.9408 5.73304C12.1808 5.54973 10.4736 6.77538 9.57711 6.77538C8.66268 6.77538 7.28208 5.75076 5.79412 5.78087C3.87937 5.81009 2.08809 6.90733 1.10565 8.6112C-0.92184 12.0853 0.590281 17.1907 2.53277 19.9989C3.50447 21.3742 4.6399 22.9098 6.12607 22.8558C7.58003 22.7965 8.12315 21.9384 9.87774 21.9384C11.6162 21.9384 12.1262 22.8558 13.6419 22.8213C15.2024 22.7965 16.1848 21.4398 17.1225 20.0521C18.2454 18.4757 18.6964 16.9233 18.7143 16.8436C18.6776 16.8312 15.6837 15.7003 15.6542 12.2793Z"
-                        fill="white"
-                      />
-                      <path
-                        d="M12.6056 4.18479C13.3321 3.25713 13.8293 1.99508 13.6913 0.714355C12.6396 0.761884 11.3245 1.45699 10.5672 2.36427C9.89712 3.16377 9.29857 4.4742 9.45319 5.70655C10.6345 5.79651 11.8474 5.09801 12.6056 4.18479Z"
-                        fill="white"
-                      />
-                    </svg>
-                    <div className="!text-left ml-2">
-                      <span className=" text-[7px] p-0 m-0">
-                        Download on the
-                      </span>
-                      <p className="-mt-2 text-sm">AppStore</p>
+        <div className="3xl:w-[70%] mx-auto">
+          <div className="bg-[#f4f4f4] grid lg:grid-cols-2 items-center rounded-xl lg:rounded-3xl pt-5">
+            <div className="px-5 lg:px-16">
+              <span className="light-bg text-everest-blue-600 p-2 px-4 rounded-full text-xs lg:text-sm xl:text-base">
+                Elevate Your Journey
+              </span>
+              <h1 className="my-4 text-[18px] lg:text-[20px] xl:text-[32px] font-semibold">
+                Reach New Heights with Everest
+              </h1>
+              <p className="text-xs lg:text-sm xl:text-base">
+                Discover the ultimate travel experience with Everest. Whether
+                you need quick and convenient rides, luxurious car rentals, or
+                seamless trip planning, our user-friendly app has you covered.{" "}
+              </p>
+              <div className="grid lg:grid-cols-2 gap-3 lg:gap-8 mt-5 mb-5 lg:mb-0 lg:mt-8">
+                <Link
+                  href="https://apps.apple.com/ng/app/everest-ride-delivery-earn/id6456938354"
+                  target="_blank"
+                >
+                  <Button mode="dark">
+                    <div className="flex items-center justify-center">
+                      <svg
+                        width="19"
+                        height="23"
+                        viewBox="0 0 19 23"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.6542 12.2793C15.6283 9.42505 18.0155 8.03645 18.1246 7.9718C16.7727 6.02086 14.6772 5.7543 13.9408 5.73304C12.1808 5.54973 10.4736 6.77538 9.57711 6.77538C8.66268 6.77538 7.28208 5.75076 5.79412 5.78087C3.87937 5.81009 2.08809 6.90733 1.10565 8.6112C-0.92184 12.0853 0.590281 17.1907 2.53277 19.9989C3.50447 21.3742 4.6399 22.9098 6.12607 22.8558C7.58003 22.7965 8.12315 21.9384 9.87774 21.9384C11.6162 21.9384 12.1262 22.8558 13.6419 22.8213C15.2024 22.7965 16.1848 21.4398 17.1225 20.0521C18.2454 18.4757 18.6964 16.9233 18.7143 16.8436C18.6776 16.8312 15.6837 15.7003 15.6542 12.2793Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M12.6056 4.18479C13.3321 3.25713 13.8293 1.99508 13.6913 0.714355C12.6396 0.761884 11.3245 1.45699 10.5672 2.36427C9.89712 3.16377 9.29857 4.4742 9.45319 5.70655C10.6345 5.79651 11.8474 5.09801 12.6056 4.18479Z"
+                          fill="white"
+                        />
+                      </svg>
+                      <div className="!text-left ml-2">
+                        <span className=" text-[7px] p-0 m-0">
+                          Download on the
+                        </span>
+                        <p className="-mt-2 text-sm">AppStore</p>
+                      </div>
                     </div>
-                  </div>
-                </Button>
-              </Link>
-              <Link
-                href="https://play.google.com/store/apps/details?id=kn.everest.passenger"
-                target="_blank"
-              >
-                <Button mode="dark">
-                  <div className="flex items-center justify-center">
-                    <svg
-                      width="23"
-                      height="25"
-                      viewBox="0 0 23 25"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.7222 12.2355L0.706177 22.5246C0.706554 22.5267 0.707306 22.5285 0.707659 22.5307C1.01484 23.648 2.06929 24.4706 3.32069 24.4706C3.82094 24.4706 4.29061 24.3398 4.69339 24.11L4.72538 24.0918L16.0003 17.7951L10.7222 12.2355Z"
-                        fill="#EB3131"
-                      />
-                      <path
-                        d="M20.7449 10.5635L20.7356 10.5568L15.9918 7.64697L10.6474 12.679L16.0104 18.3529L20.7291 15.472C21.5564 14.9994 22.118 14.0766 22.118 13.0125C22.118 11.9559 21.564 11.0377 20.7449 10.5635Z"
-                        fill="#F6B60B"
-                      />
-                      <path
-                        d="M0.800251 2.29443C0.738587 2.51322 0.706177 2.74238 0.706177 2.98035V21.4913C0.706177 21.7288 0.738205 21.9588 0.800642 22.1768L11.4121 11.9691L0.800251 2.29443Z"
-                        fill="#5778C5"
-                      />
-                      <path
-                        d="M10.8093 13.0002L16.0003 7.75903L4.72435 1.15616C4.31449 0.908227 3.83612 0.765137 3.32426 0.765137C2.07133 0.765137 1.01417 1.62626 0.706554 2.795C0.706177 2.79615 0.706177 2.79693 0.706177 2.79793L10.8093 13.0002Z"
-                        fill="#3BAD49"
-                      />
-                    </svg>
+                  </Button>
+                </Link>
+                <Link
+                  href="https://play.google.com/store/apps/details?id=kn.everest.passenger"
+                  target="_blank"
+                >
+                  <Button mode="dark">
+                    <div className="flex items-center justify-center">
+                      <svg
+                        width="23"
+                        height="25"
+                        viewBox="0 0 23 25"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.7222 12.2355L0.706177 22.5246C0.706554 22.5267 0.707306 22.5285 0.707659 22.5307C1.01484 23.648 2.06929 24.4706 3.32069 24.4706C3.82094 24.4706 4.29061 24.3398 4.69339 24.11L4.72538 24.0918L16.0003 17.7951L10.7222 12.2355Z"
+                          fill="#EB3131"
+                        />
+                        <path
+                          d="M20.7449 10.5635L20.7356 10.5568L15.9918 7.64697L10.6474 12.679L16.0104 18.3529L20.7291 15.472C21.5564 14.9994 22.118 14.0766 22.118 13.0125C22.118 11.9559 21.564 11.0377 20.7449 10.5635Z"
+                          fill="#F6B60B"
+                        />
+                        <path
+                          d="M0.800251 2.29443C0.738587 2.51322 0.706177 2.74238 0.706177 2.98035V21.4913C0.706177 21.7288 0.738205 21.9588 0.800642 22.1768L11.4121 11.9691L0.800251 2.29443Z"
+                          fill="#5778C5"
+                        />
+                        <path
+                          d="M10.8093 13.0002L16.0003 7.75903L4.72435 1.15616C4.31449 0.908227 3.83612 0.765137 3.32426 0.765137C2.07133 0.765137 1.01417 1.62626 0.706554 2.795C0.706177 2.79615 0.706177 2.79693 0.706177 2.79793L10.8093 13.0002Z"
+                          fill="#3BAD49"
+                        />
+                      </svg>
 
-                    <div className="!text-left ml-2">
-                      <span className=" text-[7px] p-0 m-0">GET IT ON</span>
-                      <p className="-mt-2 text-sm">Google Play</p>
+                      <div className="!text-left ml-2">
+                        <span className=" text-[7px] p-0 m-0">GET IT ON</span>
+                        <p className="-mt-2 text-sm">Google Play</p>
+                      </div>
                     </div>
-                  </div>
-                </Button>
-              </Link>
+                  </Button>
+                </Link>
+              </div>
             </div>
-          </div>
-          <div>
-            <Image
-              src="/images/two phones.png"
-              alt="Vercel Logo"
-              className="mx-auto w-[367px] xl:w-[467px]"
-              width={467}
-              height={320}
-            />
+            <div>
+              <Image
+                src="/images/two phones.png"
+                alt="Vercel Logo"
+                className="mx-auto w-[367px] xl:w-[467px]"
+                width={467}
+                height={320}
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="text-center my-20 lg:my-24 xl:my-32">
+      <section className="text-center my-20 lg:my-24 xl:my-32 3xl:w-[70%] mx-auto">
         <div className="w-90% lg:w-[50%] mx-auto">
           <span className="light-bg text-everest-blue-600 p-2 px-4 rounded-full text-xs lg:text-sm xl:text-base">
             Don’t miss out on our updates and stories
@@ -421,6 +419,51 @@ export default function Home() {
               <Button mode="blue">Subscribe Now</Button>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="my-10 mb-20">
+        {/* form */}
+        <div className="w-[90%] lg:w-[40%] mx-auto bg-blue-100 p-8 lg:p-16 rounded-2xl">
+          <h1 className="font-bold text-xl lg:text-2xl text-center">
+            Delete your account as a Driver for Everest
+          </h1>
+
+          <form action=" mt-5">
+            <div className="flex flex-col my-5">
+              <label htmlFor="" className=" text-gray-600">
+                Email:
+              </label>
+              <input
+                type="text"
+                className="bg-gray-100 w-full py-2 px-5 mt-2"
+              />
+            </div>
+
+            <div className="flex flex-col my-5">
+              <label htmlFor="" className=" text-gray-600">
+                Phone Number:
+              </label>
+              <input
+                type="text"
+                className="bg-gray-100 w-full py-2 px-5 mt-2"
+              />
+            </div>
+
+            <div className="flex flex-col my-5">
+              <label htmlFor="" className=" text-gray-600">
+                Specify Details to be Deleted:
+              </label>
+              <input
+                type="text"
+                className="bg-gray-100 w-full py-2 px-5 mt-2"
+              />
+            </div>
+
+            <button className=" bg-everest-blue-600 text-white py-3 mt-5 rounded-full w-full">
+              Delete
+            </button>
+          </form>
         </div>
       </section>
 
