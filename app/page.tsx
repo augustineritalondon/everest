@@ -1,5 +1,6 @@
 "use client";
 
+import React, { useState } from "react";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
@@ -7,8 +8,63 @@ import Button from "@/components/Button";
 import Footer from "@/components/Footer";
 import CountUp from "react-countup";
 import Link from "next/link";
+import { Toaster } from "@/components/ui/sonner";
+import { toast } from "sonner";
+
+import axios from "axios";
+import { Refresh } from "iconsax-react";
 
 export default function Home() {
+  const [email, setEmail] = useState();
+  const [phoneNumber, setPhoneNumber] = useState();
+  const [reason, setReason] = useState();
+
+  const [loading, setLoading] = useState(false);
+
+  const handleDeleteAccount = async (e: any) => {
+    setLoading(true);
+    e.preventDefault();
+
+    let data = {
+      email: email,
+      phone: phoneNumber,
+      specifics: reason,
+    };
+
+    let config = {
+      method: "post",
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "http://localhost:3000",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization",
+        "Access-Control-Allow-Credentials": "true",
+      },
+      data: data,
+    };
+
+    try {
+      const res = await axios(`/api/everest`, config);
+
+      toast("Request Submitted Successfully!");
+      setLoading(false);
+
+      return {
+        message: "Request Submitted Successfully!",
+        token: res.data,
+      };
+    } catch (err: any) {
+      console.log("catch");
+      setLoading(false);
+
+      toast("Something went wrong!");
+
+      console.log(err.response.data);
+
+      throw Error(err.response.data);
+    }
+  };
+
   return (
     <main className="">
       <div className="bg-hero-bg">
@@ -437,6 +493,7 @@ export default function Home() {
               <input
                 type="text"
                 className="bg-gray-100 w-full py-2 px-5 mt-2"
+                onChange={(e: any) => setEmail(e.target.value)}
               />
             </div>
 
@@ -447,6 +504,7 @@ export default function Home() {
               <input
                 type="text"
                 className="bg-gray-100 w-full py-2 px-5 mt-2"
+                onChange={(e: any) => setPhoneNumber(e.target.value)}
               />
             </div>
 
@@ -457,17 +515,31 @@ export default function Home() {
               <input
                 type="text"
                 className="bg-gray-100 w-full py-2 px-5 mt-2"
+                onChange={(e: any) => setReason(e.target.value)}
               />
             </div>
 
-            <button className=" bg-everest-blue-600 text-white py-3 mt-5 rounded-full w-full">
-              Delete
+            <button
+              className=" bg-everest-blue-600 text-white py-3 mt-5 rounded-2xl w-full"
+              type="button"
+              onClick={(e: any) => handleDeleteAccount(e)}
+            >
+              {loading ? (
+                <Refresh
+                  className="icon w-6 h-6 animate-spin mx-auto"
+                  variant="TwoTone"
+                />
+              ) : (
+                <>Delete</>
+              )}
             </button>
           </form>
         </div>
       </section>
 
       <Footer />
+
+      <Toaster />
     </main>
   );
 }

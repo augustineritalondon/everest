@@ -105,7 +105,7 @@ const config = {
         "hero-bg": "url('/images/line.png')",
       },
       screens: {
-        "3xl": "1528px", // Custom screen size for tablets
+        "3xl": "1700px", // Custom screen size for tablets
       },
     },
   },
