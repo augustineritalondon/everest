@@ -37,6 +37,12 @@ const Footer = () => {
                 <li className="mt-2 text-sm lg:text-base cursor-pointer">
                   Blog
                 </li>
+                <Link
+                  href="/delete"
+                  className="mt-2 text-sm lg:text-base cursor-pointer"
+                >
+                  Delete
+                </Link>
               </ul>
             </div>
             <div>

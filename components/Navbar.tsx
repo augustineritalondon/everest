@@ -14,11 +14,35 @@ import Image from "next/image";
 import Button from "./Button";
 import { CloseCircle, HambergerMenu, Menu } from "iconsax-react";
 import Link from "next/link";
+import Bowser from "bowser";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
 
   const [aboutMenu, setAboutMenu] = useState(false);
+
+  const appStoreUrl =
+    "https://apps.apple.com/ng/app/everest-ride-delivery-earn/id6456938354"; // Replace YOUR_APP_ID with your app's ID
+  const playStoreUrl =
+    "https://play.google.com/store/apps/details?id=kn.everest.passenger"; // Replace YOUR_PACKAGE_NAME with your app's package name
+
+  const handleDownload = () => {
+    const browser = Bowser.getParser(window.navigator.userAgent);
+    const os = browser.getOS();
+
+    if (os.name === "Android") {
+      // Redirect to Google Play Store
+      window.location.href = playStoreUrl;
+    } else if (os.name === "iOS") {
+      // Redirect to Apple App Store
+      window.location.href = appStoreUrl;
+    } else if (os.name === "macOS") {
+      // Redirect to a general download or information page for desktops and laptops
+      window.location.href = appStoreUrl;
+    } else {
+      window.location.href = playStoreUrl;
+    }
+  };
 
   return (
     <div className="md:flex justify-between w-[90%] mx-auto py-5 md:py-8 relative 3xl:w-[70%]">
@@ -157,9 +181,10 @@ const Navbar = () => {
       </div>
 
       <Link
-        href="https://play.google.com/store/apps/details?id=kn.everest.passenger"
+        href=""
         target="_blank"
         className="hidden md:block"
+        onClick={() => handleDownload()}
       >
         <Button mode="blue">Download the app</Button>
       </Link>

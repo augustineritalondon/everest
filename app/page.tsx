@@ -478,65 +478,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="my-10 mb-20">
-        {/* form */}
-        <div className="w-[90%] lg:w-[40%] mx-auto bg-blue-100 p-8 lg:p-16 rounded-2xl">
-          <h1 className="font-bold text-xl lg:text-2xl text-center">
-            Delete your account as a Driver for Everest
-          </h1>
-
-          <form action=" mt-5">
-            <div className="flex flex-col my-5">
-              <label htmlFor="" className=" text-gray-600">
-                Email:
-              </label>
-              <input
-                type="text"
-                className="bg-gray-100 w-full py-2 px-5 mt-2"
-                onChange={(e: any) => setEmail(e.target.value)}
-              />
-            </div>
-
-            <div className="flex flex-col my-5">
-              <label htmlFor="" className=" text-gray-600">
-                Phone Number:
-              </label>
-              <input
-                type="text"
-                className="bg-gray-100 w-full py-2 px-5 mt-2"
-                onChange={(e: any) => setPhoneNumber(e.target.value)}
-              />
-            </div>
-
-            <div className="flex flex-col my-5">
-              <label htmlFor="" className=" text-gray-600">
-                Specify Details to be Deleted:
-              </label>
-              <input
-                type="text"
-                className="bg-gray-100 w-full py-2 px-5 mt-2"
-                onChange={(e: any) => setReason(e.target.value)}
-              />
-            </div>
-
-            <button
-              className=" bg-everest-blue-600 text-white py-3 mt-5 rounded-2xl w-full"
-              type="button"
-              onClick={(e: any) => handleDeleteAccount(e)}
-            >
-              {loading ? (
-                <Refresh
-                  className="icon w-6 h-6 animate-spin mx-auto"
-                  variant="TwoTone"
-                />
-              ) : (
-                <>Delete</>
-              )}
-            </button>
-          </form>
-        </div>
-      </section>
-
       <Footer />
 
       <Toaster />
