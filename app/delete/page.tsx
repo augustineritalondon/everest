@@ -9,7 +9,7 @@ import { toast } from "sonner";
 import axios from "axios";
 import { Refresh } from "iconsax-react";
 
-const PrivacyPolicy = () => {
+const Delete = () => {
   const [email, setEmail] = useState();
   const [phoneNumber, setPhoneNumber] = useState();
   const [reason, setReason] = useState();
@@ -143,4 +143,4 @@ const PrivacyPolicy = () => {
   );
 };
 
-export default PrivacyPolicy;
+export default Delete;
