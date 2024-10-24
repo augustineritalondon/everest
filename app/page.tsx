@@ -10,6 +10,7 @@ import CountUp from "react-countup";
 import Link from "next/link";
 import { Toaster } from "@/components/ui/sonner";
 import { toast } from "sonner";
+import { useForm, ValidationError } from "@formspree/react";
 
 import axios from "axios";
 import { Refresh } from "iconsax-react";
@@ -20,6 +21,12 @@ export default function Home() {
   const [reason, setReason] = useState();
 
   const [loading, setLoading] = useState(false);
+
+  const [state, handleSubmit] = useForm("mgvevnae");
+
+  if (state.succeeded) {
+    return toast("Thanks for your submission!");
+  }
 
   const handleDeleteAccount = async (e: any) => {
     setLoading(true);
@@ -465,16 +472,55 @@ export default function Home() {
             Subscribe to our newsletter & get the latest updates
           </h1>
 
-          <div>
-            <div className="border border-everest-blue-600 rounded-full flex items-center p-1 justify-between mt-5 lg:mt-16 w-[80%] mx-auto">
+          {/* <form onSubmit={handleSubmit} className="w-[80%] mx-auto xl-w-full">
+            <div className="border border-everest-blue-600 rounded-full flex items-center p-1 justify-between mt-5 lg:mt-16 mx-auto">
               <input
-                type="text"
+                type="email"
+                name="email"
                 placeholder="Enter your email address"
-                className="pl-2 lg:pl-5 rounded-full w-[60%] lg:w-[70%] focus:outline-none"
+                className="pl-2 lg:pl-5 py-2 md:py-3 rounded-full w-[60%]  md:w-[70%] focus:outline-none"
               />
-              <Button mode="blue">Subscribe Now</Button>
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+              />
+              <button
+                type="submit"
+                disabled={state.submitting}
+                className="bg-everest-blue-600 !px-2 md:!px-3 lg:!px-5 text-[10px] text-white py-2 md:py-3 rounded-3xl text-center text-sm xl:text-base"
+              >
+                Subscribe Now
+              </button>
             </div>
-          </div>
+            <ValidationError
+              errors={state.errors}
+              className="text-left text-red-700 py-2"
+            />
+          </form> */}
+
+          <form
+            action="https://formspree.io/f/mqakawqz"
+            method="POST"
+            className="w-[80%] mx-auto xl-w-full"
+          >
+            <div className="border border-everest-blue-600 rounded-full flex items-center p-1 justify-between mt-5 lg:mt-16 mx-auto">
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email address"
+                className="pl-2 lg:pl-5 py-2 md:py-3 rounded-full w-[60%]  md:w-[70%] focus:outline-none"
+              />
+              {/* <Button mode="blue">Subscribe Now</Button> */}
+              <button
+                type="submit"
+                // disabled={state.submitting}
+                className="bg-everest-blue-600 !px-2 md:!px-3 lg:!px-5 text-[10px] text-white py-2 md:py-3 rounded-3xl text-center text-sm xl:text-base"
+              >
+                Subscribe Now
+              </button>
+            </div>
+          </form>
         </div>
       </section>
 

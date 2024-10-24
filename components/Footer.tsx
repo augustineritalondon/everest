@@ -2,8 +2,11 @@ import React from "react";
 import Image from "next/image";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Footer = () => {
+  const router = useRouter();
+
   return (
     <div className=" bg-everest-gray-950 text-white p-8 lg:p-24 xl:p-32 ">
       <div className="3xl:w-[70%] mx-auto">
@@ -15,6 +18,7 @@ const Footer = () => {
               className=""
               width={118}
               height={29}
+              onClick={() => router.push("/")}
             />
             <p className="mt-5 text-sm lg:text-base">
               Get a driver to wherever, and send packages to anywhere on the

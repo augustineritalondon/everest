@@ -15,9 +15,11 @@ import Button from "./Button";
 import { CloseCircle, HambergerMenu, Menu } from "iconsax-react";
 import Link from "next/link";
 import Bowser from "bowser";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
+  const router = useRouter();
 
   const [aboutMenu, setAboutMenu] = useState(false);
 
@@ -53,6 +55,7 @@ const Navbar = () => {
           className=""
           width={118}
           height={29}
+          onClick={() => router.push("/")}
         />
 
         {menu ? (

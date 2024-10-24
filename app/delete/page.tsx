@@ -34,7 +34,7 @@ const Delete = () => {
       method: "post",
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "http://localhost:3000",
+        // "Access-Control-Allow-Origin": "http://localhost:3000",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Access-Control-Allow-Headers": "Content-Type, Authorization",
         "Access-Control-Allow-Credentials": "true",
@@ -43,7 +43,7 @@ const Delete = () => {
     };
 
     try {
-      const res = await axios(`/api/everest`, config);
+      const res = await axios(`/api/users/request-account-deletion/`, config);
 
       toast("Request Submitted Successfully!");
       setLoading(false);
